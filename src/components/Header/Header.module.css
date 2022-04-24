@@ -1,3 +1,120 @@
 .nav{
-    background-color: rgb(67, 66, 66);
+    background-color:#222222;
+    display:flex;
+    justify-content: space-around;
+    padding: 15px 5px;
+}
+.nav ul{
+    display: flex;
+    position: relative;
+    justify-content:space-between
+}
+.bar{
+    font-size: 28px;
+    color: #fff;
+    font-weight:900;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: none;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.closeButton{
+    font-size: 28px;
+    color: #fff;
+    font-weight:900;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+
+.closeBotton:hover{
+    color: rgb(222, 222, 222);
+}
+.bar:hover{
+    color: rgb(222, 222, 222);
+}
+.nav ul li{
+    margin-right:15px;
+}
+.nav a{
+    color:rgb(183, 181, 181);
+    font-size: 15px;
+    font-weight:400;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+}
+.nav a:hover{
+    color: #31b675;
+}
+.loginContainer{
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+
+}
+.loginContainer a {
+    margin-right:10px;
+}
+.loginContainer button{
+    color: rgb(238, 236, 236);
+    background-color:rgb(7, 161, 105);
+    font-size:15px;
+    padding:3px;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    cursor: pointer;
+}
+.loginContainer button:hover{
+    background-color:#31b675;
+    color: #fff;
+}
+.open{
+    left: 0!important;
+}
+@media (max-width: 990px) {
+    .nav ul{
+        position:absolute;
+        width:100%;
+        background-color:#31b675;
+        height: 100vh;
+        left: -120%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        top: 0;
+
+    }
+    .bar{
+        display: block;
+    }
+    .block{
+        display: block;
+    }
+    .nav a{
+        color: rgb(238, 234, 234);
+        font-weight: 450;
+    }
+    .nav a:hover{
+        color: #fff;
+        
+    }
 }

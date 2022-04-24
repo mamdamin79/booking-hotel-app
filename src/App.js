@@ -6,6 +6,9 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import Gallery from "./components/Gallery/Gallery";
 import Home from "./components/Home/Home";
 import Destination from "./components/Destination/Destination";
+import Blog from "./components/Blog/Blog";
+import Testimonial from "./components/Testimonial/Testimonial";
+import Contact from "./components/Contact/Contact";
 
 function App() {
   return (
@@ -21,12 +24,22 @@ function App() {
         <Route path="/destination">
           <Destination/>
         </Route>
+        <Route path="/blog">
+          <Blog/>
+        </Route>
+        <Route path="/testimonial">
+          <Testimonial/>
+        </Route>
+        <Route path="/contactus">
+          <Contact/>
+        </Route>
         <Route path="/">
           <Home/>
         </Route>
       </Switch>
     </div>
   );
+
 }
 
 export default App;
