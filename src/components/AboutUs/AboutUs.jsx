@@ -4,7 +4,7 @@ import styles from './AboutUs.module.css'
 const AboutUs = () => {
     return (
         <h1>
-            this is about us
+            this is about
         </h1>
     );
 }

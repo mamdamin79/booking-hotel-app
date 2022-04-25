@@ -1,7 +1,15 @@
 import React from 'react';
+import DatePicker from './DatePicker/DatePicker';
+import HomeSlider from './HomeComp/HomeSlider';
+// components
+
 const Home = () => {
     return (
-        <h1>this is Home</h1>
+        <>
+            <DatePicker/>
+            <HomeSlider/>
+        </>
+        
     );
 }
  

@@ -12,25 +12,25 @@ const Headere = () => {
             <ul className={showMobileMenu ? styles.open : ""}>
                 {showMobileMenu && <BiChevronLeftSquare className={showMobileMenu ? `${styles.closeButton} ${styles.block}`: styles.closeButton} onClick={()=> setShowMobileMenu(false)}/>}
                 <li>
-                    <Link to="/">Home</Link>
+                    <Link to="/" onClick={()=> setShowMobileMenu(false)}>Home</Link>
                 </li>
                 <li>
-                    <Link to="/about">About Us</Link>
+                    <Link to="/about" onClick={()=> setShowMobileMenu(false)}>About Us</Link>
                 </li>
                 <li>
-                    <Link to="/gallery">Gallery</Link>
+                    <Link to="/gallery" onClick={()=> setShowMobileMenu(false)}>Gallery</Link>
                 </li>
                 <li>
-                    <Link to="/destination">Destination</Link>
+                    <Link to="/destination" onClick={()=> setShowMobileMenu(false)}>Destination</Link>
                 </li>
                 <li>
-                    <Link to="/blog">Blog</Link>
+                    <Link to="/blog" onClick={()=> setShowMobileMenu(false)}>Blog</Link>
                 </li>
                 <li>
-                    <Link to="/testimonial">Testimonial</Link>
+                    <Link to="/testimonial" onClick={()=> setShowMobileMenu(false)}>Testimonial</Link>
                 </li>
                 <li>
-                    <Link to="/contactus">Contact Us</Link>
+                    <Link to="/contactus" onClick={()=> setShowMobileMenu(false)}>Contact Us</Link>
                 </li>
             </ul>
             

@@ -33,7 +33,7 @@ function App() {
         <Route path="/contactus">
           <Contact/>
         </Route>
-        <Route path="/">
+        <Route exact path="/">
           <Home/>
         </Route>
       </Switch>
