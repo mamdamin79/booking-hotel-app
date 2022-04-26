@@ -1,6 +1,6 @@
 import React from 'react';
-import DatePicker from './DatePicker/DatePicker';
-import HomeSlider from './HomeComp/HomeSlider';
+import HomeSlider from "./HomeComp/Slider/HomeSlider";
+import DatePicker from "./HomeComp/DatePicker/DatePicker"
 // components
 
 const Home = () => {

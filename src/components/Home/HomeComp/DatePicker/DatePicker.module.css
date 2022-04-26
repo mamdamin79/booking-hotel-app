@@ -13,7 +13,7 @@
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
 }
-h1,p{
+.title,.subTitle{
     color:#fff;
 }
 input{

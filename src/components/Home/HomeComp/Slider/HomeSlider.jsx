@@ -7,9 +7,9 @@ import "swiper/css/navigation";
 // import required modules
 import { Pagination, Navigation } from "swiper";
 // import slider image
-import slide1 from "../../../assets/images/slider-1.jpg"
-import slide2 from "../../../assets/images/slider-2.jpg"
-import slide3 from "../../../assets/images/slider-3.jpg"
+import slide1 from "../../../../assets/images/slider-1.jpg";
+import slide2 from "../../../../assets/images/slider-2.jpg"
+import slide3 from "../../../../assets/images/slider-3.jpg"
 
 const HomeSlider = () => {
     return (

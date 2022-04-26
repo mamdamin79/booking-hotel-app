@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    width: 90%;
+    margin: 30px auto;
+}
+.contentContainer{
+    height: 100%;
+    padding: 40px 10px 40px 10px;
+}
+.title{
+    color:rgb(90, 90, 90);
+    font-size: 16px;
+    font-weight:450;
+    margin: 10px 0;
+}
+.title .keyword{
+    color: #31b675;
+    font-size: 22px;
+    font-weight:550;
+}
+.contentContainer p{
+    color: #333;
+    font-size:16px;
+    margin: 15px 0;
+
+}
+.contentContainer h3{
+    color:rgb(7, 161, 105);
+}
+.exploreButton{
+    color: rgb(238, 236, 236);
+    background-color:rgb(7, 161, 105);
+    font-size:16px;
+    padding:8px 16px;
+    border-radius:3px;
+    -webkit-border-radius:3px;
+    -moz-border-radius:3px;
+    -ms-border-radius:3px;
+    -o-border-radius:3px;
+    transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    font-weight: 450;
+}
+.exploreButton:hover{
+    background-color:#31b675;
+    color: #fff;
+}
+
+.imageContainer img{
+    width: 450px;
+}
+
+
+@media (max-width: 800px){
+    .container{
+        flex-direction: column;
+    }
+    .imageContainer img{
+        width: 100%;
+    }
+}
