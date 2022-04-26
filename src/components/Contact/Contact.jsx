@@ -1,9 +1,10 @@
 import React from 'react';
+import LocationBar from '../LocationBar/LocationBar';
 const Contact = () => {
     return (
-        <h1>
-            contact
-        </h1>
+        <>
+            <LocationBar/>
+        </>
     );
 }
  

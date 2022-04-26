@@ -1,0 +1,20 @@
+.container{
+    background-image: url("../../assets/images/image-heading.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 20vh;
+    padding: 10px 20px;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.container h1{
+    color: #fff;
+}
+.container div a{
+    color:#31b675;
+
+}
+.container div span{
+    color: #fff;
+}

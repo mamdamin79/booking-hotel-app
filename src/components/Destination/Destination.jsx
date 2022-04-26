@@ -1,9 +1,10 @@
 import React from 'react';
+import LocationBar from '../LocationBar/LocationBar';
 const Destination = () => {
     return (
-        <h1>
-            this is the destination
-        </h1>
+        <>
+            <LocationBar/>
+        </>
     );
 }
  

@@ -1,7 +1,10 @@
 import React from 'react';
+import LocationBar from '../LocationBar/LocationBar';
 const Testimonial = () => {
     return (
-        <h1>Testimonial</h1>
+        <>
+            <LocationBar/>
+        </>
     );
 }
  

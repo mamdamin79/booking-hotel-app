@@ -1,9 +1,12 @@
 import React from 'react';
+import LocationBar from '../LocationBar/LocationBar';
 // styles
 import styles from './Gallery.module.css'
 const Gallery = () => {
     return (
-        <h1>this is gallery</h1>
+        <>  
+            <LocationBar/>
+        </>
     );
 }
  
