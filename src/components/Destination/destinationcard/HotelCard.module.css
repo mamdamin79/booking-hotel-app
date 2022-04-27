@@ -1,0 +1,7 @@
+.container{
+    border: 1px solid #ccc;
+}
+.container img{
+    width: 100%;
+    height:300px
+}
