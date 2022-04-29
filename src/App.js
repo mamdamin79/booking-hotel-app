@@ -12,6 +12,7 @@ import Contact from "./components/Contact/Contact";
 import { useEffect,useState } from "react";
 //api
 import { getData } from "./assets/api/fetchdata"
+import Details from "./components/Details/Details";
 function App() {
   const [hotels,setHotels] = useState([])
    useEffect(()=>{
@@ -31,6 +32,9 @@ function App() {
         </Route>
         <Route path="/gallery" >
           <Gallery/>
+        </Route>
+        <Route path="/destination/:id">
+          <Details hotels={hotels} />
         </Route>
         <Route path="/destination">
           <Destination hotels={hotels}/>
