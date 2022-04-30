@@ -13,6 +13,7 @@ import { useEffect,useState } from "react";
 //api
 import { getHotelData,getBlogData } from "./assets/api/fetchdata"
 import Details from "./components/Details/Details";
+import BlogDetails from "./components/Blog/BlogDetails/BlogDetails";
 function App() {
   const [hotels,setHotels] = useState([])
   const [blogs, setblogs] = useState([])
@@ -42,7 +43,7 @@ function App() {
           <Destination hotels={hotels}/>
         </Route>
         <Route path="/blog/:id">
-          <Blog blogs={blogs} />
+          <BlogDetails blogs={blogs} />
         </Route>
         <Route path="/blog">
           <Blog blogs={blogs} />
