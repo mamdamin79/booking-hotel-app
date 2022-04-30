@@ -1,4 +1,5 @@
 import axios from "axios";
+// hotel data from travel advisor API
 const url = 'https://travel-advisor.p.rapidapi.com/hotels/list'
 const options = {
   params: {
@@ -19,7 +20,14 @@ const options = {
   }
 };
 
-export const getData = async ()=>{
+export const getHotelData = async ()=>{
     const response = await axios.get(url,options)
     return response.data.data
+}
+
+// fake blogs from freerealapi
+
+export const getBlogData = async ()=>{
+  const response = await axios.get("https://api.freerealapi.com/blogs")
+  return response.data.blogs
 }

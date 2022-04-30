@@ -4,7 +4,7 @@ import { BiLocationPlus, BiMedal, BiStar } from "react-icons/bi";
 import styles from "./Details.module.css"
 
 const Details = ({hotels}) => {
-    const name = useParams().id;
+    const name = useParams().name;
     const hotelInfo = hotels.find(hotel => hotel.name === name)
     console.log(hotelInfo)
     return (

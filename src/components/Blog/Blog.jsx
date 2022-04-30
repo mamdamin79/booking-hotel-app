@@ -1,10 +1,16 @@
 import React from 'react';
 import LocationBar from '../LocationBar/LocationBar';
-const Blog = () => {
+import BlogCard from './BlogCard/BlogCard';
+// styles
+import styles from './Blog.module.css';
+const Blog = ({blogs}) => {
+    console.log(blogs)
     return (
         <>
             <LocationBar/>
-            <h1>Blog</h1>
+            <div className={styles.container}>
+                {blogs.length > 0 ? blogs.map((blog) => <BlogCard info={blog} key={blog._id}/>) : null}
+            </div>
         </>
     );
 }
