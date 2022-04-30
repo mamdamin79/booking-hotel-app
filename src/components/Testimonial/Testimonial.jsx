@@ -1,6 +1,7 @@
 import React from 'react';
 import LocationBar from '../LocationBar/LocationBar';
-const Testimonial = () => {
+const Testimonial = ({users}) => {
+    console.log(users)
     return (
         <>
             <LocationBar/>

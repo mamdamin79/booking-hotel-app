@@ -31,3 +31,7 @@ export const getBlogData = async ()=>{
   const response = await axios.get("https://api.freerealapi.com/blogs")
   return response.data.blogs
 }
+export const getUserData = async ()=>{
+  const response = await axios.get("https://testimonialapi.toolcarton.com/api")
+  return response.data
+}

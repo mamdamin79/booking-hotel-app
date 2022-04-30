@@ -11,16 +11,18 @@ import Testimonial from "./components/Testimonial/Testimonial";
 import Contact from "./components/Contact/Contact";
 import { useEffect,useState } from "react";
 //api
-import { getHotelData,getBlogData } from "./assets/api/fetchdata"
+import { getHotelData,getBlogData,getUserData } from "./assets/api/fetchdata"
 import Details from "./components/Details/Details";
 import BlogDetails from "./components/Blog/BlogDetails/BlogDetails";
 function App() {
   const [hotels,setHotels] = useState([])
   const [blogs, setblogs] = useState([])
+  const [users, setUsers] = useState([])
    useEffect(()=>{
      const apiCall = async()=>{
       setHotels(await getHotelData())
       setblogs(await getBlogData())
+      setUsers(await getUserData())
      }
      apiCall()
      
@@ -49,7 +51,7 @@ function App() {
           <Blog blogs={blogs} />
         </Route>
         <Route path="/testimonial">
-          <Testimonial/>
+          <Testimonial users={users} />
         </Route>
         <Route path="/contactus">
           <Contact/>
