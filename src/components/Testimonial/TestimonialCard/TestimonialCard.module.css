@@ -1,0 +1,33 @@
+.container{
+    padding:10px 15px;
+    -webkit-box-shadow: 11px 12px 6px -8px rgba(0,0,0,0.16);
+    box-shadow: 11px 12px 6px -8px rgba(0,0,0,0.16);
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+
+}
+.message{
+    color: #333;
+    margin-bottom: 15px;
+}
+.contentContainer{
+    border-top: 1px solid #ccc;
+    display: flex;
+    align-items: center;
+    padding-top:10px
+}
+.container img {
+    width:80px;
+    height:80px;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.contentContainer div{
+    margin-left:20px
+}
