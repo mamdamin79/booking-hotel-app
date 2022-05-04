@@ -1,7 +1,7 @@
 .section{
     background-color: rgb(223, 252, 252);
     text-align: center;
-    padding: 40px 20px;
+    padding: 40px 20px 80px 20px;
 }
 .section p::before,.section p::after{
     content: "";
