@@ -1,0 +1,20 @@
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    padding:20px 20px;
+    gap: 20px;
+    background-color: rgb(224, 254, 254);
+
+}
+.card{
+    text-align:center;
+    padding: 10px;
+    -webkit-box-shadow: 11px 12px 6px -8px rgba(0,0,0,0.16);
+    box-shadow: 11px 12px 6px -8px rgba(0,0,0,0.16);
+    background-color: #fff;
+}
+.card img{
+    width:100px;
+    height:100px;
+    object-fit: cover;
+}

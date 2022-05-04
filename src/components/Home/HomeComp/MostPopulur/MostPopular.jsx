@@ -9,6 +9,7 @@ import "swiper/css/navigation";
 import { Pagination, Navigation } from "swiper";
 import styles from "./MostPopular.module.css"
 import HotelCard from '../../../Destination/destinationcard/HotelCard';
+import { v4 } from 'uuid';
 const MostPopular = ({hotels}) => {
     return (
         <section className={styles.section}>
@@ -33,7 +34,7 @@ const MostPopular = ({hotels}) => {
         modules={[Pagination]}
         className="mySwiper"
       >
-        {hotels.length >0 && hotels.filter(hotel => typeof(hotel.photo) === 'object').slice(0,9).map(hotel=> <SwiperSlide><HotelCard info={hotel} /></SwiperSlide>) }
+        {hotels.length >0 && hotels.filter(hotel => typeof(hotel.photo) === 'object').slice(0,9).map(hotel=> <SwiperSlide key={v4()}><HotelCard info={hotel} /></SwiperSlide>) }
       </Swiper>
         </section>
     );
