@@ -3,18 +3,17 @@ import { Route, Switch } from "react-router-dom"
 // Components
 import Header from "./components/Header/Header";
 import AboutUs from "./components/AboutUs/AboutUs";
-import Gallery from "./components/Gallery/Gallery";
 import Home from "./components/Home/Home";
 import Destination from "./components/Destination/Destination";
 import Blog from "./components/Blog/Blog";
 import Testimonial from "./components/Testimonial/Testimonial";
 import Contact from "./components/Contact/Contact";
-import { useEffect,useState } from "react";
-//api
-import { getHotelData,getBlogData,getUserData } from "./assets/api/fetchdata"
 import Details from "./components/Details/Details";
 import BlogDetails from "./components/Blog/BlogDetails/BlogDetails";
 import Signin from "./components/Signin/Signin";
+import { useEffect,useState } from "react";
+//api
+import { getHotelData,getBlogData,getUserData } from "./assets/api/fetchdata"
 function App() {
   const [hotels,setHotels] = useState([])
   const [blogs, setblogs] = useState([])
@@ -36,9 +35,7 @@ function App() {
         <Route path="/about" >
           <AboutUs/>
         </Route>
-        <Route path="/gallery" >
-          <Gallery/>
-        </Route>
+        
         <Route path="/destination/:name">
           <Details hotels={hotels} />
         </Route>
@@ -61,7 +58,7 @@ function App() {
           <Signin/>
         </Route>
         <Route exact path="/">
-          <Home/>
+          <Home hotels={hotels}/>
         </Route>
       </Switch>
     </div>

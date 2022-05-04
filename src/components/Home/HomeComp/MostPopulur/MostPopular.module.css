@@ -1,0 +1,26 @@
+.section{
+    background-color: rgb(223, 252, 252);
+    text-align: center;
+    padding: 40px 20px;
+}
+.section p::before,.section p::after{
+    content: "";
+    background-color:rgb(7, 161, 105);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.section p::before{
+    margin-left: -30px;
+}
+.section p::after{
+    margin-left: 10px;
+}
+.section p{
+    margin: 20px 0;
+}

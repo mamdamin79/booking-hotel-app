@@ -18,9 +18,6 @@ const Headere = () => {
                     <Link to="/about" onClick={()=> setShowMobileMenu(false)}>About Us</Link>
                 </li>
                 <li>
-                    <Link to="/gallery" onClick={()=> setShowMobileMenu(false)}>Gallery</Link>
-                </li>
-                <li>
                     <Link to="/destination" onClick={()=> setShowMobileMenu(false)}>Destination</Link>
                 </li>
                 <li>

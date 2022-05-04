@@ -2,6 +2,8 @@
     display: flex;
     width: 90%;
     margin: 30px auto;
+    -webkit-box-shadow: 11px 12px 6px -8px rgba(0,0,0,0.16);
+    box-shadow: 11px 12px 6px -8px rgba(0,0,0,0.16);
 }
 .contentContainer{
     height: 100%;
