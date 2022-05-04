@@ -60,6 +60,9 @@ function App() {
         <Route exact path="/">
           <Home hotels={hotels}/>
         </Route>
+        <Route exact path="/*">
+          <Home hotels={hotels}/>
+        </Route>
       </Switch>
       <Footer/>
     </div>

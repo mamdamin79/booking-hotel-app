@@ -29,7 +29,9 @@
     -ms-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     cursor: pointer;
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
+    display: block
 }
 .box button:hover{
     background-color:#31b675;
@@ -45,6 +47,18 @@
 
 
 }
+.box input{
+    width: 90%;
+    margin:10px auto 15px auto;
+    display: block;
+}
 .box a:hover{
     color: #31b675;
+}
+@media (max-width: 450px){
+    .footer{
+        padding:20px 10px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    }
 }
