@@ -14,6 +14,7 @@ import Signin from "./components/Signin/Signin";
 import { useEffect,useState } from "react";
 //api
 import { getHotelData,getBlogData,getUserData } from "./assets/api/fetchdata"
+import Footer from "./components/Footer/Footer";
 function App() {
   const [hotels,setHotels] = useState([])
   const [blogs, setblogs] = useState([])
@@ -35,7 +36,6 @@ function App() {
         <Route path="/about" >
           <AboutUs/>
         </Route>
-        
         <Route path="/destination/:name">
           <Details hotels={hotels} />
         </Route>
@@ -61,6 +61,7 @@ function App() {
           <Home hotels={hotels}/>
         </Route>
       </Switch>
+      <Footer/>
     </div>
   );
 
