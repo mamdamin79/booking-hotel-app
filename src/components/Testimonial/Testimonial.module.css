@@ -4,3 +4,10 @@
     grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     gap: 30px;
 }
+@media (max-width: 550px){
+    .container{
+        padding:20px 5px;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+
+    }
+}
