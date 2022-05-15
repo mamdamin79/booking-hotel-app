@@ -15,6 +15,7 @@ import { useEffect,useState } from "react";
 //api
 import { getHotelData,getBlogData,getUserData } from "./assets/api/fetchdata"
 import Footer from "./components/Footer/Footer";
+import Register from "./components/Register/Register";
 function App() {
   const [hotels,setHotels] = useState([])
   const [blogs, setblogs] = useState([])
@@ -56,6 +57,9 @@ function App() {
         </Route>
         <Route path="/signin">
           <Signin/>
+        </Route>
+        <Route path="/register">
+          <Register/>
         </Route>
         <Route exact path="/">
           <Home hotels={hotels}/>

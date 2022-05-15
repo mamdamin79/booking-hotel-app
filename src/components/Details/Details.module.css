@@ -15,6 +15,8 @@
     justify-content: center;
     width: 100%;
     padding:50px 0;
+    background-image: url(../../assets/images/234.png);
+
 }
 .container p{
     color: #333;

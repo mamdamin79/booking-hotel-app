@@ -35,7 +35,7 @@ const Headere = () => {
                 <Link to="/signin">
                     <BiChevronRight/>Sign-in
                 </Link>
-                <Link to="register">
+                <Link to="/register">
                     <BiChevronRight/>
                     Register
                 </Link>

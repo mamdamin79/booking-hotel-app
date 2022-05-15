@@ -12,14 +12,14 @@
 .formcontainer{
     -webkit-box-shadow: 11px 12px 6px -8px rgba(0,0,0,0.16);
     box-shadow: 11px 12px 6px -8px rgba(0,0,0,0.16);
-    /* width: 70%; */
+    width: 60%;
     padding: 30px 20px;
 
 }
 .formcontainer form{
     width: 100%;
 }
-.formcontainer form input[type="password"],input[type="email"]{
+.formcontainer form input[type="password"],input[type="email"],input[type="text"]{
     display: block;
     width: 100%;
     border: 1px solid #ccc;
@@ -53,6 +53,10 @@
     color: #fff;
 
 }
+.errorMessage{
+    font-size:13px;
+    color: red;
+}
 .formcontainer div{
     display: flex;
     justify-content:space-between;
@@ -72,4 +76,32 @@
         width:80%
        
     }
+}
+.success{
+    background-image: url("../../assets/images/19.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 70vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction: column;
+    width:100%;
+    background-color: #e2fdf0;
+}
+.success p{
+    color: #02b55e;
+    font-weight:550;
+    font-size:18px;
+    text-align: center;
+}
+.success a{
+    background-color: rgb(7, 161, 105);
+    display:flex;
+    justify-content: center;
+    color: #fff;
+    border-radius:3px;
+    align-items: center;
+    padding: 5px;
+    margin: 10px;
 }

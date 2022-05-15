@@ -1,14 +1,24 @@
-import React from 'react';
+import React,{ useState } from 'react';
 // styles
 import styles from './Signin.module.css'
+// api
+import { signinUser } from '../../assets/api/fetchdata'; 
 const Signin = () => {
+    const [info, setInfo] = useState({
+        email: '',
+        password: ''
+    })
+    const submitHandler = async(e) => {
+        e.preventDefault();
+        signinUser(info);
+    }
     return (
         <div className={styles.container}>
             <div className={styles.formcontainer}>
                 <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quam, delectus.</p>
-                <form>
-                    <input type="email" placeholder="Email" />
-                    <input type="password" placeholder="Password" />
+                <form onSubmit={submitHandler}>
+                    <input onChange={(e)=>setInfo({...info,email: e.target.value})} type="email" placeholder="Email" />
+                    <input onChange={(e)=>setInfo({...info,email: e.target.value})} type="password" placeholder="Password" />
                     <div>
                         <div>
                             <input type="checkbox" />
@@ -17,7 +27,6 @@ const Signin = () => {
                         <a href="#">forgot password</a>
                     </div>
                     <button>Sign in</button>
-
                 </form>
             </div>
         </div>

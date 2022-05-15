@@ -35,3 +35,30 @@ export const getUserData = async ()=>{
   const response = await axios.get("https://testimonialapi.toolcarton.com/api")
   return response.data
 }
+export const registerUser = async (info)=>{
+  const res = await fetch('https://api.freerealapi.com/auth/register', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      name: info.name,
+      email: info.email, 
+      password: info.password ,
+    })
+  })
+  const data = await res.json()
+  return data
+  
+}
+export const signinUser = (info) => {
+  fetch('http://localhost:3300/auth/login', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      email: "mohammadaminsaheb2@gmail.com",
+      password: "seven7blue",
+    })
+  })
+  .then((response) => response.json())
+  .then((json) => console.log(json))
+  
+}
