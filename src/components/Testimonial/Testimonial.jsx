@@ -4,12 +4,11 @@ import TestimonialCard from './TestimonialCard/TestimonialCard';
 // styles
 import styles from './Testimonial.module.css'
 const Testimonial = ({users}) => {
-    console.log(users)
     return (
         <>
             <LocationBar/>
             <div className={styles.container}>
-                {users.map(user => <TestimonialCard info={user} key={user.id}/>)}
+                {users.length > 0 ? users.map(user => <TestimonialCard info={user} key={user.id}/>): <h2 className={styles.loading}>Loading...</h2>}
             </div>
         </>
     );

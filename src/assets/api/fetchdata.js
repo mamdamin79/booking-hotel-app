@@ -25,6 +25,7 @@ export const getHotelData = async ()=>{
     return response.data.data
 }
 
+
 // fake blogs from freerealapi
 
 export const getBlogData = async ()=>{
@@ -49,16 +50,18 @@ export const registerUser = async (info)=>{
   return data
   
 }
-export const signinUser = (info) => {
-  fetch('http://localhost:3300/auth/login', {
+export const signinUser =async (info) => {
+  const res =await fetch('http://localhost:3300/auth/login', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
-      email: "mohammadaminsaheb2@gmail.com",
-      password: "seven7blue",
+      email: info.email,
+      password: info.password,
     })
   })
-  .then((response) => response.json())
-  .then((json) => console.log(json))
+  const data = await res.json()
+  return data 
   
 }
+
+

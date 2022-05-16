@@ -11,7 +11,7 @@ const Destination = ({hotels}) => {
         <>
             <LocationBar/>
             <div className={styles.container}>
-                {hotels.length > 0 && hotels.filter(hotel => typeof(hotel.photo) === 'object').slice(0,9).map(hotel=> <HotelCard key={v4()} info={hotel} />)}
+                {hotels.length > 0 ? hotels.filter(hotel => typeof(hotel.photo) === 'object').slice(0,9).map(hotel=> <HotelCard key={v4()} info={hotel} />): <h2 className={styles.loading}>Loading...</h2>}
             </div>
         </>
     );

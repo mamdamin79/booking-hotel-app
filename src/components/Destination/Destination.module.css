@@ -22,3 +22,8 @@
 
     }
 }
+
+.loading{
+    height: 60vh;
+    text-align: center;
+}

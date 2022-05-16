@@ -20,13 +20,15 @@ function App() {
   const [hotels,setHotels] = useState([])
   const [blogs, setblogs] = useState([])
   const [users, setUsers] = useState([])
+
+
    useEffect(()=>{
      const apiCall = async()=>{
       setHotels(await getHotelData())
       setblogs(await getBlogData())
       setUsers(await getUserData())
-     }
-     apiCall()
+    }
+    apiCall()
      
 
    },[])

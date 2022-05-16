@@ -10,7 +10,7 @@ const Signin = () => {
     })
     const submitHandler = async(e) => {
         e.preventDefault();
-        signinUser(info);
+        await signinUser(info);
     }
     return (
         <div className={styles.container}>
